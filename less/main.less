@@ -1,0 +1,52 @@
+header{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding: @padding;
+}
+
+.title-container {
+    background-image: url("assets\home.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: @padding;
+    border-bottom: 2px, solid, black;
+
+    .btn{
+        .button( white, 10%, 5%, center, center);
+    }
+}
+
+.artists-container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding:@padding;
+
+    .artist{
+    width:48%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:@padding;
+
+        img{
+            width:70%;
+            padding:@padding;
+            border-radius: 10%;
+
+            &:hover{
+                opacity:80%;
+            }
+        }
+
+        a{
+            text-decoration:none;
+            color:midnightblue;
+        }
+    }
+}
