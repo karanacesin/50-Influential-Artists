@@ -122,7 +122,6 @@ header {
   padding: 2%;
 }
 .title-container {
-  background-image: url("assets\home.png");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -130,8 +129,8 @@ header {
   padding: 2%;
   border-bottom: 2px, solid, black;
 }
-.title-container .btn {
-  background-color: white;
+.btn {
+  background-color: teal;
   border-radius: 10%;
   padding: 5%;
   display: flex;
