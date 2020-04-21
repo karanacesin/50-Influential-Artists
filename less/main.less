@@ -3,10 +3,23 @@ header{
     justify-content:space-around;
     align-items:center;
     padding: @padding;
+
+    nav{
+
+        a{
+
+        @media @mobile{
+            display:flex;
+            flex-direction:column;
+        }
+    
+    }
+
+    }
 }
 
 .title-container {
-    background-image: url(\assets\home.png);
+    background-image: url(..\assets\home.png) 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,6 +29,10 @@ header{
 
     .btn {
         .button( white, 10%, 5%, center, center);
+    }
+
+    @media @mobile{
+        background-size: 450px;
     }
 }
 
@@ -48,5 +65,13 @@ header{
             text-decoration:none;
             color:midnightblue;
         }
+        
+        @media @mobile{
+            width: 90%
+        }
+    }
+
+    @media @mobile{
+        flex-direction: column;
     }
 }

@@ -122,8 +122,14 @@ header {
   align-items: center;
   padding: 2%;
 }
+@media (max-width:500px) {
+  header nav a {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .title-container {
-  background-image: url(\assets\home.png);
+  background-image: url(..\assets\home.png) 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -138,6 +144,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width:500px) {
+  .title-container {
+    background-size: 450px;
+  }
 }
 .artists-container {
   width: 100%;
@@ -165,4 +176,14 @@ header {
 .artists-container .artist a {
   text-decoration: none;
   color: midnightblue;
+}
+@media (max-width:500px) {
+  .artists-container .artist {
+    width: 90%;
+  }
+}
+@media (max-width:500px) {
+  .artists-container {
+    flex-direction: column;
+  }
 }
